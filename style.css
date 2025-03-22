@@ -1,0 +1,78 @@
+body {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(231,255,64,1) 0%, rgba(0,212,255,1) 92%);
+}
+#logo_big {
+    border-radius: 1000px;
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin: auto;
+    padding: 60px 60px 60px 60px;
+}
+#Wel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 100px;
+    margin-top: 0px;
+    margin-bottom: 35%;
+}
+#Wel1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    margin-bottom: 0px;
+}
+.hotbar_button {
+    background-color: red;
+    border-radius: 15px;
+    
+} 
+.title {
+    font-size: 45px;
+}
+.content {
+    font-size: 35px;
+}
+
+#hotbar {
+    background-color: rgb(90, 90, 90);
+    border-radius: 15px;
+    width: 1000px;
+    height: 50px;
+    position: fixed;
+    left: 23%;
+    align-items: center;
+    display: flex;
+}
+
+#hotbar_logo {
+    border-radius: 100px;
+    height: 35px;
+    width: 35px;
+    padding-top: 7.5px;
+    padding-left: 7.5px;
+    padding-bottom: 7.5px;
+    padding-right: 7.5px;
+}
+
+#buttons {
+    position: absolute;
+    right: 0;
+    padding-right: 7.5px;
+ }
+
+#hotbar_name {
+    display: block;
+    margin: auto;
+}
+
+.subtitle {
+    font-size: 35px;
+    text-decoration: underline;
+}
+#apropos2 {
+    padding-bottom: 23%;
+}
