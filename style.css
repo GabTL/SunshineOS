@@ -25,9 +25,10 @@ body {
     font-size: 25px;
     margin-bottom: 0px;
 }
-.hotbar_button {
+button{
     background-color: red;
     border-radius: 15px;
+    border-color: red;
     
 } 
 .title {
@@ -38,14 +39,16 @@ body {
 }
 
 #hotbar {
-    background-color: rgb(90, 90, 90);
+    background-color: rgb(92, 92, 92);
     border-radius: 15px;
-    width: 1000px;
+    width: 750px;
     height: 50px;
-    position: fixed;
-    left: 23%;
-    align-items: center;
     display: flex;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    align-items: center;
+    position: fixed;
 }
 
 #hotbar_logo {
@@ -73,6 +76,9 @@ body {
     font-size: 35px;
     text-decoration: underline;
 }
-#apropos2 {
-    padding-bottom: 23%;
+button{
+    text-decoration: none;
+}
+#whatsapp {
+    font-size: 18px;
 }
