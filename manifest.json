@@ -1,0 +1,27 @@
+{
+  "background_color": "#ffffff",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "Sunshine OS",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "Sunshine OS",
+  "start_url": "/",
+  "theme_color": "#ffffff",
+  "icons": [
+    {
+      "src": "https://gabtl.github.io/SunshineOS/logo.png",
+      "type": "image/png",
+      "sizes": "640x640",
+      "isSquare": true,
+      "isPng": true,
+      "isWebp": false,
+      "isJpg": false,
+      "width": 640,
+      "is512x512": false,
+      "is256x256": false,
+      "is192x192": false
+    }
+  ],
+  "id": "com.tlcorp.sunshineos"
+}
