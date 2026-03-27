@@ -1,0 +1,155 @@
+body {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(231,255,64,1) 0%, rgba(0,212,255,1) 92%);
+}
+
+#hotbar {
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%);
+    width: 75vw;
+    min-width: 100px;
+    max-width: 600px;
+    height: 50px;
+    border: solid;
+    border-color: rgb(92, 92, 92);
+    background-color: rgb(92, 92, 92);
+    border-radius: 15px;
+    opacity: 1;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+}
+
+#p1 {
+    width: 99vw;
+    height: 98vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+        animation: de-scroll linear;
+    animation-timeline: scroll()
+}
+
+#p2 {
+    width: 99vw;
+    height: 98vh;
+    border: solid;
+    border-color: transparent;
+        animation: scroll linear;
+    animation-timeline: scroll()
+}
+
+#title {
+    font-size: 10vw;
+    border: solid;
+    border-color: transparent;
+    margin: 0;
+}
+
+#pre-title {
+    font-size: 3vw;
+    border: solid;
+    border-color: transparent;
+    margin: 0;
+}
+
+#title-logo {
+    height: 25vh;
+    border: solid;
+    border-color: transparent;
+    padding: 60px 60px 60px 60px;
+}
+
+#translate {
+    border: solid;
+    border-color: black ;
+    position: fixed;
+    border-radius: 15px;
+    left: 99%;
+    transform: translate(-99%);
+    width: 50px;
+    height: 50px;
+    z-index: 2000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes scroll {
+    from {scale: .8; opacity: 0;}
+    to {scale: 1; opacity: 1;}
+}
+
+@keyframes de-scroll {
+    from {scale: 1; opacity: 1;}
+    to {scale: .8; opacity: 0;}
+}
+
+
+.cliquable {
+    cursor: pointer;
+}
+
+#translate-text{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#hotbar-logo {
+    height: 35px;
+    width: 35px;
+    padding-top: 7.5px;
+    padding-left: 7.5px;
+    padding-bottom: 7.5px;
+    padding-right: 7.5px;
+}
+
+#hotbar-login-btn {
+    border-radius: 15px;
+    background-color: transparent;
+    border: 2px solid;
+    border-color: black;
+    box-shadow: none;
+    appearance: none;
+    -webkit-appearance: none;  
+}
+
+.marker {
+  font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.impact {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#hotbar-btn-redirect {
+    display: flex;
+    text-decoration: none;
+}
+
+#hotbar-services {
+    border: solid;
+    border-color: transparent;
+}
+
+#login-page {
+    display: flex;
+    border: solid;
+    border-color: white;
+    align-self: center;
+    vertical-align: 50vh;
+    width: 400px;
+    height: 500px;
+    background-color: white;
+    border-radius: 25px;
+}
+
+.g-signin2 {
+    border: solid;
+    border-color:aqua;
+    width: 75%;
+}
