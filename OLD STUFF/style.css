@@ -1,0 +1,94 @@
+body {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(231,255,64,1) 0%, rgba(0,212,255,1) 92%);
+}
+#logo_big {
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin: auto;
+    padding: 60px 60px 60px 60px;
+    border: solid;
+    border-color: violet;
+}
+#Wel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 100px;
+    margin-top: 0px;
+    margin-bottom: 35%;
+}
+#Wel1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    margin-bottom: 0px;
+    border: solid;
+    border-color: red;
+}
+button{
+    background-color: red;
+    border-radius: 15px;
+    border-color: red;
+    
+} 
+.title {
+    font-size: 45px;
+}
+.content {
+    font-size: 35px;
+}
+
+#hotbar {
+    background-color: rgb(92, 92, 92);
+    border-radius: 15px;
+    width: 750px;
+    height: 50px;
+    display: flex;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    align-items: center;
+    position: fixed;
+}
+
+#hotbar_logo {
+    height: 35px;
+    width: 35px;
+    padding-top: 7.5px;
+    padding-left: 7.5px;
+    padding-bottom: 7.5px;
+    padding-right: 7.5px;
+}
+
+#buttons {
+    position: absolute;
+    right: 0;
+    padding-right: 7.5px;
+ }
+
+#hotbar_name {
+    display: block;
+    margin: auto;
+}
+
+.subtitle {
+    font-size: 35px;
+    text-decoration: underline;
+}
+button{
+    text-decoration: none;
+}
+#whatsapp {
+    font-size: 18px;
+}
+
+.page_title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 75px;
+    margin-top: 40px;
+}

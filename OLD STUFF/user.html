@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Accueil - Sunshine OS</title>
+        <link rel="icon" type="image/x-icon" href="logo.png">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Bienvenue <span id="user-name"></span> !</h1>
+        <button onclick="logout()">Se déconnecter</button>
+        <a href="cloud.html"><div id="cloud" class="div">
+            <img src="cloud.png" class="div_img">
+            <h1 class="div_title">CLOUD</h1>
+        </div></a>
+        <div id="games" class="div">
+            <img src="" class="div_img">
+            <h1 class="div_title">JEUX</h1>
+        </div>
+        <div id="chat" class="div">
+            <img src="" class="div_img">
+            <h1 class="div_title">TCHAT</h1>
+        </div>
+        <script>
+            // Vérifier si l'utilisateur est connecté
+            const username = localStorage.getItem("username");
+        
+            if (!username) {
+                // Si pas connecté, on redirige vers la page de login
+                window.location.href = "index.html";
+            }
+        </script>
+        <script>
+            function logout() {
+            localStorage.removeItem("username");
+            window.location.href = "index.html";
+            }
+        </script>
+    </body>
+</html>

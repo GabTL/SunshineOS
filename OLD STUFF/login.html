@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Connexion - Sunshine OS</title>
+    <link rel="stylesheet" type="text/css" href="style2.css">
+    <link rel="icon" type="image/x-icon" href="logo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <img src="logo-trans.png" id="logo">
+    <h1 id="Login">Connexion</h1>
+    <form id="form">
+        <label for="username">Identifiant :</label>
+        <input type="text" id="username" required>
+        <br>
+        <label for="password">Mot de passe :</label>
+        <input type="password" id="password" required>
+        <br>
+        <button type="submit">Se connecter</button>
+    </form>
+
+    <script>
+        let users = {};
+
+        // Charger le fichier users.json
+        fetch('user.json')
+            .then(response => response.json())
+            .then(data => {
+                users = data;
+            })
+            .catch(error => {
+                alert("Erreur de chargement des utilisateurs.");
+                console.error(error);
+            });
+
+        document.getElementById("form").addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            let username = document.getElementById("username").value;
+            let password = document.getElementById("password").value;
+
+            if (users[username] && users[username] === password) {
+                // Redirection personnalisée (peut être améliorée plus tard)
+                localStorage.setItem("username", username);
+                window.location.href = "user.html";
+            } else {
+                alert("Identifiant ou mot de passe incorrect !");
+            }
+        });
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cloud - Sunshine OS</title>
+        <link rel="icon" type="image/x-icon" href="logo.png">
+        <link rel="stylesheet" href="style3.css">
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <h1>Vos fichiers</h1>
+        <ul id="file-list"></ul>
+
+        <script>
+            fetch('list_files.php')
+            .then(response => response.json())
+            .then(files => {
+            const list = document.getElementById('file-list');
+            files.forEach(file => {
+            const li = document.createElement('li');
+            const link = document.createElement('a');
+            link.href = `users/${sessionStorage.getItem('username')}/${file}`;
+            link.download = file;
+            link.textContent = file;
+            li.appendChild(link);
+            list.appendChild(li);
+                });
+            });
+        </script>
+    </body>
+</html>
